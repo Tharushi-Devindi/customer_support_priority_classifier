@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import joblib
 import re
-from textblob import TextBlob
+#from textblob import TextBlob
 import datetime 
 @st.cache_resource
 def load_ml_assets():
