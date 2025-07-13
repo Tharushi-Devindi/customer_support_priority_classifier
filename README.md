@@ -123,7 +123,7 @@ customer\_support\_priority\_classifier/
 ├── .env                          \# (Optional) For storing sensitive environment variables (e.g., API keys).
 ├── .gitignore                    \# Specifies files and directories to be ignored by Git (e.g., virtual environment, data outputs).
 └── README.md                     \# This README file, detailing the project.
-└── requirements.txt              \# (Optional but recommended) A list of all Python dependencies for easy installation.
+└── requirements.txt              \#A list of all Python dependencies for easy installation.
 
 ````
 
@@ -136,7 +136,7 @@ The dataset utilized in this project is the "Customer Support Ticket Dataset," p
 
 The development of the predictive model followed a structured pipeline:
 
-### 1. Data Preprocessing & Cleaning
+## 1. Data Preprocessing & Cleaning
 
 This phase focused on transforming raw data into a clean and suitable format for machine learning.
 
