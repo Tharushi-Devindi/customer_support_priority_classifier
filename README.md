@@ -76,20 +76,26 @@ To execute the analysis and observe the model's performance:
 The project adheres to a modular and organized structure, aligning with production-level engineering practices:
 
 
-
-customer\_support\_priority\_classifier/
+customer_support_priority_classifier/
 ├── data/
-│   ├── raw/                      \# Contains the original, raw dataset.
-│   │   └── customer\_support\_tickets.csv
-│   └── cleaned/                  \# Stores the cleaned and preprocessed dataset (output from notebook).
-│       └── customer\_support\_tickets\_cleaned.csv
+│   ├── cleaned/                  # Stores the cleaned and preprocessed dataset 
+│   │   └── customer_support_tickets_cleaned.csv
+│   └── raw/                      # Contains the original, raw dataset.
+│       └── customer_support_tickets.csv
+├── models/                       # Houses all trained machine learning artifacts for persistence.
+│   ├── model_features.pkl
+│   ├── original_categorical_cols.pkl
+│   ├── priority_map.pkl
+│   ├── random_forest_model.pkl
+│   └── scaler.pkl
 ├── notebooks/
-│   └── customer\_ticket\_priority\_classifier.ipynb \# The main Jupyter Notebook containing all code for analysis and modeling.
-├── models/                       \# (Not explicitly used for saving in this notebook, but good practice for deployment)
-├── .env                          \# (Optional) For storing sensitive environment variables (e.g., API keys).
-├── .gitignore                    \# Specifies files and directories to be ignored by Git (e.g., virtual environment, data outputs).
-└── README.md                     \# This README file, detailing the project.
-└── requirements.txt              \#A list of all Python dependencies for easy installation.
+│   └── customer_ticket_priority_classifier.ipynb # The main Jupyter Notebook containing all code for analysis and modeling.
+├── tests/                        
+├── venv/                         # Python virtual environment, isolating project dependencies.
+├── .gitignore                    # Specifies files and directories to be ignored by Git.
+├── app.py                        # The Streamlit application script.
+├── README.md                     # This README file.
+└── requirements.txt              # Lists all project dependencies.
 
 
 ## Model Details
