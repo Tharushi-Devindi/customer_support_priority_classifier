@@ -75,7 +75,7 @@ To execute the analysis and observe the model's performance:
 ## Project Structure
 The project adheres to a modular and organized structure, aligning with production-level engineering practices:
 
-````
+
 
 customer\_support\_priority\_classifier/
 ├── data/
