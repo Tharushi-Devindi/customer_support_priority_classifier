@@ -121,12 +121,10 @@ st.markdown("""
         background-color: #45a049;
         transform: translateY(-2px);
     }
-    .stTextInput>div>div>input, .stTextArea>div>div>textarea, .stSelectbox>div>div {
-        border-radius: 8px;
-        border: 1px solid #dcdcdc; /* Light gray border */
-        padding: 10px;
-        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
-    }
+.stSelectbox div[data-baseweb="select"] > div {
+    color: #f0f0f0 !important; /* Ensure text is black */
+}
+
     h1, h2, h3 {
         color: #2c3e50; /* Dark blue-grey for headers */
         text-align: center;
@@ -151,7 +149,11 @@ with st.form("ticket_form"):
 
     with col1:
         customer_age = st.number_input("Customer Age", min_value=18, max_value=100, value=30, help="Age of the customer.")
-        customer_gender = st.selectbox("Customer Gender", ["Male", "Female", "Other"], help="Customer's self-identified gender.")
+        customer_gender = st.selectbox(
+    "Customer Gender",
+    options=["Male", "Female", "Other"],
+    index=["Male", "Female", "Other"].index("Male"))
+
         
         ticket_type = st.selectbox("Ticket Type", [
             "Technical issue", "Billing inquiry", "Product inquiry", "Cancellation request", "Refund request"
@@ -167,7 +169,7 @@ with st.form("ticket_form"):
 
     with col2:
         date_of_purchase = st.date_input("Date of Purchase", datetime.date(2023, 1, 1), help="Date the product was purchased.")
-        first_response_time = st.date_input("First Response Date (Dummy)", datetime.date(2023, 6, 1), help="Use a dummy date for now, as exact time is not crucial for the hour/dayofweek extraction in this model version.")
+        first_response_time = st.date_input("First Response Date", datetime.date(2023, 6, 1), help="Use a dummy date for now, as exact time is not crucial for the hour/dayofweek extraction in this model version.")
         first_response_time_str = f"{first_response_time} 12:00:00" # Dummy time for conversion
 
 
