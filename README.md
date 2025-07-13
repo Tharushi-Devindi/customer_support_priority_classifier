@@ -9,10 +9,9 @@ To set up the project and run the Jupyter Notebook, follow these steps:
 
 1.  **Clone the repository (or download the project files):**
     ```bash
-    git clone <your-repo-url>
+    git clone https://github.com/Tharushi-Devindi/customer_support_priority_classifier.git
     cd customer_support_priority_classifier
     ```
-    (Replace `<your-repo-url>` with the actual URL if you host this on GitHub.)
 
 2.  **Create and activate a Python virtual environment:**
     It's highly recommended to use a virtual environment to isolate project dependencies.
@@ -47,40 +46,7 @@ To execute the analysis and observe the model's performance:
 3.  **Run Cells:**
     Execute all cells sequentially from top to bottom. The notebook is structured to walk you through each stage of the data science pipeline, with comments and outputs at every step.
 
-## Project Structure
-The project adheres to a modular and organized structure, aligning with production-level engineering practices:
-Here's a comprehensive `README.md` file generated based on your completed Jupyter Notebook, explaining your process, model choices, and results, while also incorporating the "Production-Level Engineering" mindset for future steps.
 
------
-
-````markdown
-# Customer Support Ticket Priority Classifier
-
-## Project Title
-Predictive Model to Classify Customer Support Ticket Priority Levels
-
-## Description
-This project develops a machine learning model to automatically classify customer support tickets into predefined priority levels (Low, Medium, High, Critical). The primary objective is to streamline the ticket management process, enabling faster identification and resolution of critical issues, thereby improving customer satisfaction and optimizing resource allocation within a support team. The project covers the entire data science lifecycle, from raw data preprocessing and feature engineering to model training, evaluation, optimization, and explainability.
-
-## Installation
-To set up the project and run the Jupyter Notebook, follow these steps:
-
-1.  **Clone the repository (or download the project files):**
-    ```bash
-    git clone <your-repo-url>
-    cd customer_support_priority_classifier
-    ```
-    (Replace `<your-repo-url>` with the actual URL if you host this on GitHub.)
-
-2.  **Create and activate a Python virtual environment:**
-    It's highly recommended to use a virtual environment to isolate project dependencies.
-    ```bash
-    python -m venv venv
-    # On Windows:
-    .\venv\Scripts\activate
-    # On macOS/Linux/Git Bash:
-    source venv/bin/activate
-    ```
 
 3.  **Install the required Python packages:**
     While your virtual environment is active, install all necessary libraries:
@@ -125,12 +91,6 @@ customer\_support\_priority\_classifier/
 └── README.md                     \# This README file, detailing the project.
 └── requirements.txt              \#A list of all Python dependencies for easy installation.
 
-````
-
-## Data Source
-The dataset utilized in this project is the "Customer Support Ticket Dataset," publicly available on Kaggle. It provides labeled customer support tickets with various attributes suitable for classification tasks.
-
- **Kaggle Dataset Link:** [https://www.kaggle.com/datasets/suraj520/customer-support-ticket-dataset](https://www.kaggle.com/datasets/suraj520/customer-support-ticket-dataset)
 
 ## Model Details
 
